@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-text-base: #ffffff;
+    --color-fill: #180146;
+  }
+
+  .theme-red {
+    --color-text-base: #000000;
+    --color-fill: #fa4471;
+  }
+}
