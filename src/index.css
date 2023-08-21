@@ -4,12 +4,30 @@
 
 @layer base {
   :root {
-    --color-text-base: #ffffff;
-    --color-fill: #180146;
+    --color-primary: #f96876; /* Main Primary color */
+    --color-primary-1: #ffe6e8;
+    --color-primary-2: #feb8be;
+    --color-primary-3: #dc0015;
+    --color-primary-4: #bf0012;
+
+    --color-complement: #75e15e; /* Main Complement color */
+    --color-complement-1: #eaffe6;
+    --color-complement-2: #c2fbb5;
+    --color-complement-3: #21be00;
+    --color-complement-4: #1da500;
   }
 
-  .theme-red {
-    --color-text-base: #000000;
-    --color-fill: #fa4471;
+  .theme-blue {
+    --color-primary-0: #6074c6; /* Main Primary color */
+    --color-primary-1: #e9edff;
+    --color-primary-2: #bbc7f8;
+    --color-primary-3: #09269b;
+    --color-primary-4: #031d86;
+
+    --color-complement-0: #ffd36b; /* Main Complement color */
+    --color-complement-1: #fff7e6;
+    --color-complement-2: #ffeab8;
+    --color-complement-3: #e4a000;
+    --color-complement-4: #c58a00;
   }
 }
