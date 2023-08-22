@@ -1,4 +1,5 @@
 import { DarkModeToggle } from ".";
+// import { ReactComponent as Logo } from "../../../assets/mylogo.svg";
 
 interface darkModeToggleProps {
   isDarkMode: boolean;
@@ -7,8 +8,9 @@ interface darkModeToggleProps {
 
 const Header = ({ isDarkMode, toggle }: darkModeToggleProps) => {
   return (
-    <div className="flex h-24 w-full items-center justify-between bg-gray-200 dark:bg-gray-800">
-      <h1 className="text-2xl font-bold text-black dark:text-white">
+    <div className="bg-skin-accent dark:bg-skin-dark-base flex h-24 w-full items-center justify-between p-4">
+      {/* <Logo /> */}
+      <h1 className="dark:text-skin-base-dark text-2xl font-bold text-skin-base">
         My Portfolio
       </h1>
       <DarkModeToggle isDarkMode={isDarkMode} toggle={toggle} />

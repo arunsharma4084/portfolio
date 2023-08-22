@@ -6,22 +6,31 @@ export default {
     ],
     theme: {
       extend: {
-        color: {
+        colors: {
           skin: {
             base: 'var(--color-primary)',
             fill: 'var(--color-primary-1)',
             complement: 'var(--color-complement)',
+            accent: 'var(--color-primary-2)',
+            'accent-inverted': 'var(--color-primary-3)',
+            'fill-inverted': 'var(--color-primary-4)',
           }
         },
         textColor: {
           skin: {
             base: 'var(--color-primary-4)',
+            'base-dark': 'var(--color-primary-1)',
           }
         },
         backgroundColor: {
           skin: {
             fill: 'var(--color-primary-1)',
-            'fill-dark': 'var(--color-complement-4)'
+            'dark-fill': 'var(--color-dark-primary)',
+            'dark-base': 'var(--color-dark-secondary)',
+            base: 'var(--color-primary)',
+            accent: 'var(--color-primary-2)',
+            'accent-inverted': 'var(--color-primary-3)',
+            'fill-inverted': 'var(--color-primary-4)',
           }
         }
       },

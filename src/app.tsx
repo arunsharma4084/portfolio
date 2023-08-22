@@ -7,7 +7,7 @@ function App() {
   return (
     <div className={isDarkMode ? "dark" : ""}>
       <Header isDarkMode={isDarkMode} toggle={toggle} />
-      <div className="dark:bg-skin-fill-dark flex h-screen w-full flex-col items-center justify-center gap-4 bg-skin-fill p-8 dark:text-white">
+      <div className="dark:text-skin-base-dark dark:bg-skin-dark-fill flex h-screen w-full flex-col items-center justify-center gap-4 bg-skin-fill p-8 text-3xl font-bold text-skin-base">
         My Portfolio
       </div>
     </div>
