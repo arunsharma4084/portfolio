@@ -1,25 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Farro&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --color-primary: #f96876; /* Main Primary color */
-    --color-primary-1: #ffe6e8;
-    --color-primary-2: #feb8be;
-    --color-primary-3: #dc0015;
-    --color-primary-4: #bf0012;
-    --color-dark-primary: #121212;
-    --color-dark-secondary: #404040;
-
-    --color-complement: #75e15e; /* Main Complement color */
-    --color-complement-1: #eaffe6;
-    --color-complement-2: #c2fbb5;
-    --color-complement-3: #21be00;
-    --color-complement-4: #1da500;
-  }
-
-  .theme-blue {
     --color-primary: #6074c6; /* Main Primary color */
     --color-primary-1: #e9edff;
     --color-primary-2: #bbc7f8;
@@ -33,6 +19,22 @@
     --color-complement-2: #ffeab8;
     --color-complement-3: #e4a000;
     --color-complement-4: #c58a00;
+  }
+
+  .theme-red {
+    --color-primary: #f96876; /* Main Primary color */
+    --color-primary-1: #ffe6e8;
+    --color-primary-2: #feb8be;
+    --color-primary-3: #dc0015;
+    --color-primary-4: #bf0012;
+    --color-dark-primary: #121212;
+    --color-dark-secondary: #404040;
+
+    --color-complement: #75e15e; /* Main Complement color */
+    --color-complement-1: #eaffe6;
+    --color-complement-2: #c2fbb5;
+    --color-complement-3: #21be00;
+    --color-complement-4: #1da500;
   }
 
   .theme-green {

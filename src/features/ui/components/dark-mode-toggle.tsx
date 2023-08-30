@@ -1,20 +1,18 @@
+import { useTheme } from "@src/common/context";
 import { MdSunny } from "react-icons/md";
 import { PiMoonStarsFill } from "react-icons/pi";
 
-interface darkModeToggleProps {
-  isDarkMode: boolean;
-  toggle: () => void;
-}
+const DarkModeToggle = () => {
+  const { isDarkMode, toggleDarkMode } = useTheme();
 
-const DarkModeToggle = ({ isDarkMode, toggle }: darkModeToggleProps) => {
   return (
     <div
-      className="dark:border-skin-fill border-skin-fill-inverted relative h-7 w-[54px] rounded-[14px] border-2 px-1"
-      onClick={toggle}
+      className="relative h-7 w-[54px] rounded-[14px] border-2 border-skin-fill-inverted px-1 dark:border-skin-fill"
+      onClick={toggleDarkMode}
     >
       <div className="absolute left-0 top-0 flex items-center justify-center">
         <div
-          className={`bg-skin-complement border-skin-fill-inverted absolute h-[25px] w-[26px] rounded-full border-2 transition-opacity ${
+          className={`absolute h-[25px] w-[25px] rounded-full border-2 border-skin-fill-inverted bg-skin-complement transition-opacity ${
             isDarkMode ? "opacity-0" : ""
           }`}
         ></div>
@@ -23,7 +21,7 @@ const DarkModeToggle = ({ isDarkMode, toggle }: darkModeToggleProps) => {
 
       <div className="absolute right-0 top-0 flex items-center justify-center">
         <div
-          className={`dark:bg-skin-fill-inverted border-skin-fill absolute h-[25px] w-[26px] rounded-full border-2 transition-opacity ${
+          className={`absolute h-[25px] w-[25px] rounded-full border-2 border-skin-fill transition-opacity dark:bg-skin-fill-inverted ${
             isDarkMode ? "" : "opacity-0"
           }`}
         ></div>

@@ -1,15 +1,19 @@
-import { useDarkMode } from "usehooks-ts";
 import { Header } from "@features/ui/components";
+import { useTheme } from "./common/context";
+import { Dashboard } from "./pages/dashboard";
+import { Projects } from "./pages/projects";
+import { Contact } from "./pages/contact";
 
 function App() {
-  const { isDarkMode, toggle } = useDarkMode(false);
+  const { isDarkMode, theme } = useTheme();
 
+  console.log(isDarkMode);
   return (
-    <div className={isDarkMode ? "dark" : ""}>
-      <Header isDarkMode={isDarkMode} toggle={toggle} />
-      <div className="dark:text-skin-base-dark dark:bg-skin-dark-fill flex h-screen w-full flex-col items-center justify-center gap-4 bg-skin-fill p-8 text-3xl font-bold text-skin-base">
-        My Portfolio
-      </div>
+    <div className={isDarkMode ? `dark ${theme}` : `${theme}`}>
+      <Header />
+      <Dashboard />
+      <Projects />
+      <Contact />
     </div>
   );
 }

@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import defaultTheme from 'tailwindcss/defaultTheme'
+
 export default {
     content: [
       "./index.html",
@@ -32,6 +34,9 @@ export default {
             'accent-inverted': 'var(--color-primary-3)',
             'fill-inverted': 'var(--color-primary-4)',
           }
+        },
+        fontFamily: {
+          'sans': ['Farro', ...defaultTheme.fontFamily.sans],
         }
       },
     },
